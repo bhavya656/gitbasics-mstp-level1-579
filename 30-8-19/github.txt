@@ -1,0 +1,94 @@
+
+kvsw@kvsw-PC MINGW64 ~
+$ cd desktop
+
+kvsw@kvsw-PC MINGW64 ~/desktop
+$ cd gitbasics
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git -a
+unknown option: -a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git config user.name"bhavya656"
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git config user.email"nsaibhavya44@gmail.com"
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git remote add gitbasics https://github.com/bhavya656/git-basics
+fatal: remote gitbasics already exists.
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git remote -v
+gitbasics       https://github.com/bhavya656/git-basics (fetch)
+gitbasics       https://github.com/bhavya656/git-basics (push)
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git commit -m"checking"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'kvsw@kvsw-PC.(none)')
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git push -u gitbasics master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/bhavya656/git-basics'
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git config user.name"bhavya656"
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git config user.email"nsaibhavya44@gmail.com"
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git config user.email "nsaibhavya44@gmail.com"
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git config user.name "bhavya656"
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ ^C
+
+kvsw@kvsw-PC MINGW64 ~/desktop/gitbasics (master)
+$ ^C
+
+kvsw@kv
